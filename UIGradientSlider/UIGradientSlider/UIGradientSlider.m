@@ -14,13 +14,13 @@
 @interface UIGradientSlider ()
 {
     CGFloat currentValue, _thumbSize;
-    CALayer *_thumbLayer;
+    CALayer *thumbLayer;
     CAGradientLayer *_trackLayer;
     CALayer *_thumbIconLayer;
     BOOL continuous;
 }
 
-@property (nonatomic, strong, readonly) CALayer *thumbLayer;
+@property (nonatomic, strong) CALayer *thumbLayer;
 @property (nonatomic, strong, readonly) CAGradientLayer *trackLayer;
 @property (nonatomic, strong) CALayer *minTrackImageLayer;
 @property (nonatomic, strong) CALayer *maxTrackImageLayer;
